@@ -95,6 +95,7 @@ pub fn show<R: Runtime>(app_handle: &AppHandle<R>) -> tauri::Result<WebviewWindo
         .decorations(false)
         .skip_taskbar(true)
         .always_on_top(true)
+        .no_redirection_bitmap(true)
         // Transparent only so the pill's rounded corners show; the pill itself is opaque.
         .transparent(true)
         // The native shadow traces the window's alpha mask and draws a grey outline and a heavy
